@@ -3,26 +3,34 @@
     padding:0;
     outline:0;
     box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+	vertical-align: baseline;
 }
-
 body{
     margin:0;
-   /* background-color:black;*/
+    background-color:black;
     color:white;
     font-family:'century gothic',Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1;
 }
-
+ol, ul {
+	list-style: none;
+}
 .menu {
     display: flex;
-    background-color:gray;
-    height: 88px;
+    background-color:black;
+    height: 136px;
     width: 100vw;
     justify content:space-between;
     align-items: center;
     border-bottom: 1px solid #fff;
     box-shadow: 5px 0 10px rgba(0,0,0,.6);
-}
+    padding-top: 55px;
+    padding-bottom:55px;
 
+}
 .logo{
    padding: 25px 80px; 
 }
@@ -33,19 +41,115 @@ body{
     margin-right:30px;
 }
 .menuItems li{
-    border radius: 3px;
+    border-radius: 20px;
     margin: 0 5px;
 }
 .menuItems li a{
-    display: block;
     padding: 7px 14px;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
     text-transform: uppercase;
     color: white;
-
-menuItems li
-
+    border-radius: 20px;
 
 }
+.menuItems li:hover, li.active{
+    background-color:#022D40;
+    transition: .6s;
+    border-radius: 20px;
+    color:white;
+}
+.btn_menu{
+    margin-right:30px;
+    font-size:25px;
+    cursor: pointer;
+    display:none;
+}
+ul.show{
+    top:65px;
+}
 
+@media screen and (max-width: 952px){
+    .logo{
+        /*height:128px;
+        width:74px;*/
+        padding-left:35px;
+    }
+    .menuItems li a{
+        font-size:16px;   
+    }
+}
 
+@media screen and (max-width: 858px){
+    .menu{
+        height:65px;
+    }
+    .btn_menu{
+        display: inline-flex;
+    }
+    .menuItems{
+        position:fixed;
+        width: 100vw;
+        height: calc(100%-65px);
+        background:black;
+        top:-100vh;
+        text-align:center;
+        transition: all .4s;
+        flex-direction:column;
+    }
+    .menuItems li{
+        margin:30px 0 0 0;
+        line-height: 30px;
+    }
+    .menuItems li:hover{
+        background:none;
+    }
+    .menuItems li a {
+        font-size: 20px;
+        color:white;
+        font-weight:bold;
+    }
+    .menuItems li a:hover{
+        color:red;
+    }
+    .logo{
+        padding-left 35px;
+    }
+}
+@media screen and (max-width: 858px)and (orientation: landscape){
+    .menuItems li{
+        margin:5px 0 0 0;
+    }
+    .menuItems{
+        overflow:scroll;
+        height: calc(100%-65px);
+    }
+}
 
+.fotoDiego{
+    padding-top: 168px;
+    padding-left: 164px;
+}
+h1{
+    position: absolute;
+    left: 59.17%;
+    right: 17.85%;
+    top: 6.58%;
+    bottom: 90.79%;
+}
+.fotoeIntro{
+    display:flex;
+    justify-self: ;
+}
+position: absolute;
+left: 59.17%;
+right: 17.85%;
+top: 6.58%;
+bottom: 90.79%;
+
+position: absolute;
+width: 415px;
+height: 415px;
+left: 164px;
+top: 304px;
