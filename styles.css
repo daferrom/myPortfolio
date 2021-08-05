@@ -117,6 +117,8 @@ ul.show{
         padding-left 35px;
     }
 }
+/*MEDIA QUERY MENU DE NAVEGACION*/
+
 @media screen and (max-width: 858px)and (orientation: landscape){
     .menuItems li{
         margin:5px 0 0 0;
@@ -127,29 +129,130 @@ ul.show{
     }
 }
 
-.fotoDiego{
-    padding-top: 168px;
-    padding-left: 164px;
-}
-h1{
-    position: absolute;
-    left: 59.17%;
-    right: 17.85%;
-    top: 6.58%;
-    bottom: 90.79%;
-}
-.fotoeIntro{
-    display:flex;
-    justify-self: ;
-}
-position: absolute;
-left: 59.17%;
-right: 17.85%;
-top: 6.58%;
-bottom: 90.79%;
+/*INTRODUCCION*/
 
-position: absolute;
-width: 415px;
-height: 415px;
-left: 164px;
-top: 304px;
+.fotoDiego{
+    Justify-content:center;
+    margin-top:60px;
+}
+.containerlogoTituloeIntro{
+    display:flex;
+    flex-direction:column;
+    margin-left:110px;
+    margin-top:60px;
+}
+
+
+
+.fotoeIntroContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: flex-start;
+    
+}
+.fotoeIntroContainer h2{
+    font-size:48px;
+    line-height: 59px;
+    color:#0580B7;
+}
+.fotoeIntroContainer h2{
+    font-size:48px;
+    line-height: 59px;
+    color:#0580B7;
+}
+.fotoeIntroContainer h2.nombreBold{
+    font-weight: bold;
+}
+
+.contenedorlogoyTitulo{
+    display:flex;
+    margin-left:110px;
+    justify-content:center;
+    align-items: center;
+    padding-top: 0px;
+}
+
+.logo2{
+    margin-right:40px;
+}
+.parrafoIntro{
+    color:white;
+    margin-top:70px;
+    margin-left:110px;
+    line-height:50px ;
+}
+.parrafoIntro h3{
+    color:#0580B7;
+    font-weight: bold;
+    font-size:24px;
+}
+.parrafoIntro p{
+    padding-top:20px;
+
+}
+
+.datosDeContacto{
+    color:#01A0C6;
+    font-weight: bold;
+    margin-left:110px;
+    margin-top:15px;
+    line-height:50px ;
+}
+
+/*MEDIA QUERY INTRODUCCION*/
+
+@media screen and (max-width: 360px){
+    .fotoDiego{
+        Justify-content:center;
+        margin-top:30px;
+        width: 160px;
+        height: 160px;
+
+     }
+     .fotoeIntroContainer{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center; 
+    }
+    .logo2{
+        display: none;
+    }
+    .containerlogoTituloeIntro{
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedorlogoyTitulo{
+        
+    }
+    .tituloDiegoFerroProgramador{
+        align-items: center;
+        justify-content: center;
+        margin-left:0px;
+        margin-top:0px;
+    }
+    h2.nombreBold{
+        padding: 0 0 0 0;
+        color:brown;
+        font-size:24px;
+        justify-content: center;
+        align-items: center;
+        margin-left:0px;
+        margin-top:0px;
+    }
+    .fotoeIntroContainer h2{
+        font-size:24px;
+    }
+    .datosDeContacto{
+        font-size:12px;
+        color:#01A0C6;
+        font-weight: bold;
+        margin-left:0px;
+        margin-top:0px;
+        line-height:25px ;
+    }
