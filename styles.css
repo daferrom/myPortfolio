@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+   /* background-color:black;*/
+    color:white;
+    font-family:'century gothic',Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu {
+    display: flex;
+    background-color:gray;
+    height: 88px;
+    width: 100vw;
+    justify content:space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    box-shadow: 5px 0 10px rgba(0,0,0,.6);
+}
+
+.logo{
+   padding: 25px 80px; 
+}
+
+.menuItems{
+    display:flex;
+    list-style:none;
+    margin-right:30px;
+}
+.menuItems li{
+    border radius: 3px;
+    margin: 0 5px;
+}
+.menuItems li a{
+    display: block;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    color: white;
+
+menuItems li
+
+
+}
+
+
+

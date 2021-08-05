@@ -1,0 +1,35 @@
+[33mcommit 0090b703fdbb200db56c642f2e7526cfb33efb75[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: daferrom <daferrom@gmail.com>
+Date:   Tue Aug 3 10:15:18 2021 -0500
+
+    version 3
+
+[33mcommit 367a0448047afe016a1a09c9c146a03fbb33ff86[m
+Author: daferrom <daferrom@gmail.com>
+Date:   Tue Aug 3 09:27:53 2021 -0500
+
+    version 2 test
+
+[33mcommit 8a3ff7cac71f6335ec25cbe606ae43b1a7440a8b[m
+Author: daferrom <daferrom@gmail.com>
+Date:   Mon Aug 2 23:39:05 2021 -0500
+
+    beginning
+
+[33mcommit d0086b833c3d1e681b50167fbfc8746999968cf8[m
+Author: daferrom <daferrom@gmail.com>
+Date:   Mon Aug 2 22:03:57 2021 -0500
+
+    he agregado un gitignore
+
+[33mcommit 2e92617ffd1063e6a16d9a033f68908e71077d2d[m
+Author: daferrom <daferrom@gmail.com>
+Date:   Mon Aug 2 21:45:03 2021 -0500
+
+    Ahora el index html tiene un parrafo <p>
+
+[33mcommit 099f2d3a9d98c3e91c5ab7ef10e49e2a5c207e4c[m
+Author: daferrom <daferrom@gmail.com>
+Date:   Mon Aug 2 21:14:07 2021 -0500
+
+    Mi primer commit the BigBang
