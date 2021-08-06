@@ -9,16 +9,24 @@
 	vertical-align: baseline;
 }
 body{
-    margin:25px;
+
+    margin-top:136px;
+    margin-left: 40px;
+    margin-right:40px;
+    margin-bottom:40px;
     background-color:black;
     color:white;
     font-family:'century gothic',Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1;
+    z-index: 1;
 }
 ol, ul {
 	list-style: none;
 }
 .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     background-color:black;
     height: 136px;
@@ -29,7 +37,7 @@ ol, ul {
     box-shadow: 5px 0 10px rgba(0,0,0,.6);
     padding-top: 55px;
     padding-bottom:55px;
-
+    z-index: 40;
 }
 .logo{
    padding: 25px 80px; 
@@ -130,6 +138,12 @@ ul.show{
 }
 
 /*INTRODUCCION*/
+#introduccion, #SobreMi, #habilidades{
+    border-bottom-width: 1px;
+    border-bottom-style:solid;
+    border-bottom-color: gray;
+    border-radius:1px;
+}
 
 .fotoDiego{
     Justify-content:center;
@@ -168,7 +182,6 @@ ul.show{
 
 .contenedorlogoyTitulo{
     display:flex;
-    
     justify-content:center;
     align-items: center;
     padding-top: 0px;
@@ -199,6 +212,37 @@ ul.show{
     margin-top:15px;
     line-height:50px ;
 }
+/*************MEDIA QUERY INTRO**********/
+
+@media screen and (max-width: 1200px){
+    
+    .fotoDiego{
+        display:flex;
+        Justify-content:center;
+        margin-top:30px;
+        width: 350px;
+        height: 350px;
+    }
+    .fotoeIntroContainer{
+        display:flex;
+        flex-direction:column;
+        flex-wrap: nowrap;
+    }
+
+
+
+    .fotoeIntroContainer h2.nombreBold{
+        font-weight: bold;
+        font-size:36px;
+    }
+    .tituloProgramador{
+        font-size:36px;
+        line-height: 59px;
+        color:#0580B7;
+    }
+}
+
+
 /**************MIS REDES*****************************/
 .misRedesContainer{
     display:flex;
@@ -220,7 +264,7 @@ ul.show{
     margin-top:5%;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
     margin-left:25%;
     margin-right:25%;
 }
@@ -228,6 +272,15 @@ ul.show{
     padding-right: 10px;
     padding-left: 10px;
 }
+/*****linea divisora de secciones****/
+hr.divisorSecciones {
+    border:none;
+    height:1px;
+    color: white;
+    z-index: 5;
+}
+
+
 /*************Sobre Mí***********************/
 .tituloSeccion{
     display:flex;
@@ -243,6 +296,11 @@ ul.show{
 h4{
     color:#0580B7;
     font-size: 20px;
+    font-weight: bold;
+}
+h5{
+    color:#0580B7;
+    font-size: 16px;
     font-weight: bold;
 }
 .SeccionContainer{
@@ -342,7 +400,7 @@ p.parrafoSobreMi{
         width:10px;
         left:50%;
         transform:translateX(-50%);
-        background-color:white ;
+        background-color:white;
     }
     .timeline ul li {
         width: 50%;
@@ -485,19 +543,16 @@ p.parrafoSobreMi{
 }
 
 /**************SECCION HABILIDADES*****************/
+#habilidades{
+    margin-bottom:15%;
+}
 .habilidadesContainer{
     display:flex;
     flex-direction: row;    
-    border-style: solid;
-    border-color:red;
-    border-width: 1px;
     width: 95vw; 
     justify-content: space-between;
-    padding: 4% 4%;
-    
+    padding: 2% 2%;
 }
-
-
 .tituloyBarra{
     display:flex;
     flex-direction: column;
@@ -517,36 +572,62 @@ p.parrafoSobreMi{
     position:relative;
     display:block;
     content:'';
-    width: 30%;
-    height:90%;
+    width: 40%;
+    height:88%;
     background-color:#0580B7;
-    border-radius: 15px;  
+    border-radius: 14px;  
     z-index: 20;
+    margin-top:2px;
+    margin-left: 3px;
 
 }
-/*
-#habilidades ul{
+/**************SECCION PROYECTOS*****************/
+.SeccionContainerProyectos{
+    border:#01A0C6 solid 2px;
+    border-radius: 20px;
+    padding: 30px;
+    
+}
+.tituloProyecto{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.imagenWebTributoSalmona1{
+    background-image:url
+}
+.containerGaleriaImgs{
     display:flex;
-    border-style: solid;
-    border-color: aqua;
-    border-width: 1px; 
-    margin: 5px 5px;
-    list-style: none; 
-    justify-content: center; 
-
-   
-}
-#habilidades ul li{
-    display: flex;
     flex-direction: row;
-    
-    border-style: solid;
-    border-color:magenta;
-    border-width: 1px; 
-    
+    margin: 30px;
+    justify-content: space-around;
 }
-.logoHabilidad{
-    justify-self: right;
+.imagescontainer{
+    display:flex;
+    flex-direction: column;
 }
-*/
-
+.tituloydescripcionProyecto{
+    padding: 20px;
+    background: linear-gradient(180deg, #00181E 0%, rgba(38, 38, 38, 0) 85.94%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.tituloDescripcion{
+    margin-bottom:20px;
+}
+.descripcionProyecto{
+    line-height: 2;
+}
+.titulotecnologiaUsadas{
+    margin-top:20px;
+    margin-bottom:20px
+}
+/************MEDIA QUERY PROYECTOS********/
+@media screen and (max-width: 1422px){
+    .SeccionContainerProyectos{
+        align-content: center;
+    }
+    .containerGaleriaImgs{
+        display:flex;
+        flex-direction:column;
+        margin: 30px; 
+    }
