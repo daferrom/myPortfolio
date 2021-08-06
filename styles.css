@@ -333,6 +333,7 @@ p.parrafoSobreMi{
     letter-spacing: 2px;
 }
 
+
 @media screen and (min-width: 768px){
     .timeline::before{
         content:'';
@@ -405,7 +406,7 @@ p.parrafoSobreMi{
         background-color:#01A0C6 ;
 
     }
-    
+} 
 
     
 
@@ -482,3 +483,70 @@ p.parrafoSobreMi{
     }
     
 }
+
+/**************SECCION HABILIDADES*****************/
+.habilidadesContainer{
+    display:flex;
+    flex-direction: row;    
+    border-style: solid;
+    border-color:red;
+    border-width: 1px;
+    width: 95vw; 
+    justify-content: space-between;
+    padding: 4% 4%;
+    
+}
+
+
+.tituloyBarra{
+    display:flex;
+    flex-direction: column;
+    width:85%;
+    justify-content: space-around;
+}
+.barraProgreso{
+    position:relative;
+    content:'';
+    width: 100%;
+    height:25%;
+    background-color:white ;
+    border-radius: 15px;
+    z-index: 10;      
+}
+.barraProgreso:before{
+    position:relative;
+    display:block;
+    content:'';
+    width: 30%;
+    height:90%;
+    background-color:#0580B7;
+    border-radius: 15px;  
+    z-index: 20;
+
+}
+/*
+#habilidades ul{
+    display:flex;
+    border-style: solid;
+    border-color: aqua;
+    border-width: 1px; 
+    margin: 5px 5px;
+    list-style: none; 
+    justify-content: center; 
+
+   
+}
+#habilidades ul li{
+    display: flex;
+    flex-direction: row;
+    
+    border-style: solid;
+    border-color:magenta;
+    border-width: 1px; 
+    
+}
+.logoHabilidad{
+    justify-self: right;
+}
+*/
+
