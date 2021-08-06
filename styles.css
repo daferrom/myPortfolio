@@ -1,5 +1,5 @@
 *{
-    margin:0;
+    margin:0px;
     padding:0;
     outline:0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
 	vertical-align: baseline;
 }
 body{
-    margin:0;
+    margin:25px;
     background-color:black;
     color:white;
     font-family:'century gothic',Verdana, Geneva, Tahoma, sans-serif;
@@ -23,7 +23,7 @@ ol, ul {
     background-color:black;
     height: 136px;
     width: 100vw;
-    justify content:space-between;
+    justify-content:space-between;
     align-items: center;
     border-bottom: 1px solid #fff;
     box-shadow: 5px 0 10px rgba(0,0,0,.6);
@@ -114,7 +114,7 @@ ul.show{
         color:red;
     }
     .logo{
-        padding-left 35px;
+        padding-left: 35px;
     }
 }
 /*MEDIA QUERY MENU DE NAVEGACION*/
@@ -141,15 +141,11 @@ ul.show{
     margin-left:110px;
     margin-top:60px;
 }
-
-
-
 .fotoeIntroContainer{
     display:flex;
     flex-direction: row;
     justify-content:center;
     align-items: flex-start;
-    
 }
 .fotoeIntroContainer h2{
     font-size:48px;
@@ -164,10 +160,15 @@ ul.show{
 .fotoeIntroContainer h2.nombreBold{
     font-weight: bold;
 }
+.tituloProgramador{
+    font-size:48px;
+    line-height: 59px;
+    color:#0580B7;
+}
 
 .contenedorlogoyTitulo{
     display:flex;
-    margin-left:110px;
+    
     justify-content:center;
     align-items: center;
     padding-top: 0px;
@@ -179,7 +180,6 @@ ul.show{
 .parrafoIntro{
     color:white;
     margin-top:70px;
-    margin-left:110px;
     line-height:50px ;
 }
 .parrafoIntro h3{
@@ -189,23 +189,235 @@ ul.show{
 }
 .parrafoIntro p{
     padding-top:20px;
+    font-size:19px;
 
 }
 
 .datosDeContacto{
     color:#01A0C6;
     font-weight: bold;
-    margin-left:110px;
     margin-top:15px;
     line-height:50px ;
 }
+/**************MIS REDES*****************************/
+.misRedesContainer{
+    display:flex;
+    flex-direction: column;
+    
+}
+.tituloMisRedes{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    color:#0580B7;
+    font-weight: bold;
+    font-size:24px;
+    margin-top:110px;
+    justify-content: center;
+    
+}
+.CointainerLogosRedes{
+    margin-top:5%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+    margin-left:25%;
+    margin-right:25%;
+}
+.iconContainer div{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/*************Sobre Mí***********************/
+.tituloSeccion{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    color:#0580B7;
+    font-weight: bold;
+    font-size:24px;
+    margin-top:5%;
+    margin-bottom:5%;
+    justify-content: center;
+}
+h4{
+    color:#0580B7;
+    font-size: 20px;
+    font-weight: bold;
+}
+.SeccionContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.experienciaContainer{
+    display:flex;
+    flex-direction:column;
+    border-width: 1px;
+    border-style: solid;
+    border-color:#01A0C6 ;
+    border-radius:30px ;
+    padding: 20px 15px 0px 15px;
+}
+.SubtitulosSecSobreMi{
+    padding-bottom:10%;
 
-/*MEDIA QUERY INTRODUCCION*/
+}
+p.parrafoSobreMi{
+    border-radius:30px ;
+    background: linear-gradient(180deg, #00181E 0%, rgba(38, 38, 38, 0) 85.94%);
+    padding: 25px 25px;
+    margin-bottom:25px;
+    line-height:2;
+}
+.timelineContainer{
+    border-width: 1px;
+    border-style: solid;
+    border-color:#01A0C6 ;
+    border-radius:30px ;
+}
+
+.educacionContainer{
+    display:flex;
+    flex-direction:column;
+    border-width: 1px;
+    border-style: solid;
+    border-color:#01A0C6 ;
+    border-radius:30px ;
+    padding: 20px 15px 0px 15px;
+}
+/***********TIME LINE**************/
+.Secc-container {
+    min-height:100vh ;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #101010;*/
+    padding: 100px 0;
+}
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: auto;
+    margin: 0 auto;
+    position: relative;
+}
+.timeline ul{
+    list-style: none;    
+}
+.timeline ul li {
+    padding: 20px;
+    background: linear-gradient(180deg, #00181E 0%, rgba(38, 38, 38, 0) 85.94%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+    margin-bottom: 0;
+    }
+.timeline-content h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+    }
+.timeline-content h3 {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    }
+.timeline-content .date{
+    font-size: 14px;
+    font-weight:300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 768px){
+    .timeline::before{
+        content:'';
+        position:absolute;
+        height: 100%;
+        width:10px;
+        left:50%;
+        transform:translateX(-50%);
+        background-color:white ;
+    }
+    .timeline ul li {
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .timeline ul li:nth-child(1) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 25px;
+    }
+    .timeline ul li:nth-child(2) {
+        float: right;
+        clear: right;
+        transform: translateX(30px);
+        border-radius: 25px;
+    }
+    .timeline ul li:nth-child(3) {
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 25px;
+    }
+    .timeline ul li:nth-child(4) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 25px;
+    }
+    /**************NODO******************/
+    .timeline ul li::after{
+        content:'';
+        position:absolute;
+        height:40px;
+        width: 40px;
+        background-color:gray ;
+        border-radius:50%;
+        border-style: solid ;
+        border-color: white;
+        border-width: 4px;
+        bottom:0;
+    }
+    .timeline ul li:nth-child(1)::after{
+        transform:translate(-50%,50%);
+        left: -30px;;
+    }
+    .timeline ul li:nth-child(2)::after{
+        transform:translate(-50%,50%);
+        left: -30px;
+    }
+    .timeline ul li:nth-child(3)::after{
+        transform:translate(50%,-50%);
+        right: -30px;;
+    }
+    .timeline ul li:nth-child(4)::after{
+        transform:translate(-50%,50%);
+        left: -30px;;
+    }
+    .timeline ul li:hover:after{
+        background-color:#01A0C6 ;
+
+    }
+    
+
+    
+
+/******************MEDIA QUERY INTRODUCCION***********/
 
 @media screen and (max-width: 360px){
+    body{
+        margin: 25px;
+    }
     .fotoDiego{
         Justify-content:center;
-        margin-top:30px;
+        margin-top: 15px;
         width: 160px;
         height: 160px;
 
@@ -214,39 +426,51 @@ ul.show{
         display:flex;
         flex-direction: column;
         justify-content:center;
-        align-items: center; 
+        align-items: center;
+        margin: 0px; 
     }
     .logo2{
         display: none;
     }
     .containerlogoTituloeIntro{
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
         display:flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
     }
     .contenedorlogoyTitulo{
-        
+        line-height: 0px;
     }
     .tituloDiegoFerroProgramador{
         align-items: center;
         justify-content: center;
-        margin-left:0px;
-        margin-top:0px;
+        margin-bottom: 0px;
     }
     h2.nombreBold{
         padding: 0 0 0 0;
-        color:brown;
-        font-size:24px;
+        font-size: 20px;
         justify-content: center;
         align-items: center;
-        margin-left:0px;
-        margin-top:0px;
     }
-    .fotoeIntroContainer h2{
-        font-size:24px;
+    .tituloProgramador{
+        font-size: 20px;
+        line-height:0px;
+        color:#0580B7;
+    }    
+    h3.tituloParrafo{
+        color:red;
+        justify-content: center;
+        font-size: 18px;        
+    }
+    .parrafoIntro{
+     margin-top:10px;   
+    }
+    .parrafoIntro p{
+        padding-top:20px;
+        font-size:14px;
+        line-height: 15px;
     }
     .datosDeContacto{
         font-size:12px;
@@ -256,3 +480,5 @@ ul.show{
         margin-top:0px;
         line-height:25px ;
     }
+    
+}
