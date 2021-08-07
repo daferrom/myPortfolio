@@ -19,12 +19,12 @@
         <label class="logo"><a href="#"><img src="./Assets/logoNavMenu.png"></a></label>
         <ul class ="menuItems">
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre mí</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#SobreMi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul> 
     </nav>
-<main><!--INTRODUCCION-->
+<main id="main"><!--INTRODUCCION-->
     <section id="introduccion">
         <div class="fotoeIntroContainer">
             <img class="fotoDiego" src="Assets/fotoDiegoCircle.png" alt="Foto Diego Ferro">
@@ -49,23 +49,25 @@
                         cliente.
                     </p>
                 </div>
-                <p class="datosDeContacto">
-                    daferrom@gmail.com<br>
-                    ferromartinezdiego@yahoo.com<br>
-                </p>
+                <div id="contacto">
+                    <p class="datosDeContacto">
+                        daferrom@gmail.com<br>
+                        ferromartinezdiego@yahoo.com<br>
+                    </p>
+                </div>
             </div>        
         </div>
         <div class="misRedesContainer">
             <h3 class="tituloMisRedes">Mis redes</h3>
             <div class="CointainerLogosRedes">
                 <div class="iconcontainer">
-                    <img class="logoRed" src="Assets/Emaillogo1.png">
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZcRlJdDPCLbGdmnGThTRFdTTpkZGjDCcjKLFPnJQrWQSgsHXKvLxJtkrQDsczlTnPSmQB"><img class="logoRed" src="Assets/Emaillogo1.png"></a>
                 </div>
                 <div class="iconcontainer">            
-                    <img class="logoRed" src="Assets/githublogo1.png">
+                    <a href="https://github.com/daferrom"><img class="logoRed" src="Assets/githublogo1.png"></a>
                 </div>    
                 <div class="iconcontainer">
-                    <img class="logoRed" src="Assets/linkedInLogo1.png">
+                    <a href="https://www.linkedin.com/feed/"><img class="logoRed" src="Assets/linkedInLogo1.png"></a>
                 </div>
             </div>
         </div>
@@ -146,7 +148,8 @@
                     </li>
                     <li>
                         <div class="timeline-content">
-                            <h2>Educamás(Programate)</h2>
+                            <h2>Educamás<br>
+                                (Programate)</h2>
                             <h3 class="disciplina">Desarrollador Fullstack Jr</h3>
                             <h4 class="date">2021-2022</h4>
                             <p></p>
@@ -179,7 +182,7 @@
         </div>
     </section>
     <!--------------PROYECTOS---------------------->
-    <section id="habilidades">
+    <section id="proyectos">
         <h3 class="tituloSeccion">Proyectos</h3>
         <div class="SeccionContainerProyectos">
             <h4 class="tituloProyecto"> Pagina tributo a Rogelio Salmona </h4>
@@ -194,18 +197,23 @@
                 <h4 class="tituloDescripcion">Descripción</h4>
                 <p class="descripcionProyecto">
                     El proyecto es una pagina web tributo al arquitecto rogelio Salmona. La pagina esta compuesta<br>
-                    de tres secciones .El inicio contiene un resumen de salmona y su obra. A segunda sección.
-                    <br>                
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iusto cum ullam aperiam cumque<br>
-                    aliquid quis animi laboriosam voluptates, quidem id molestias, eum esse numquam dolor deserunt<br>
-                    tempore totam aliquam?<br>
+                    de tres secciones: la primera contiene un resumen de salmona y su obra; La segunda sección<br>
+                    una breve biografia del arquitecto, sus maestros , viajes y arquitecturas que lo influenciaron;<br>
+                    Finalmente la ultima parte muestra los proyectos mas representativos de su obra.<br>                
                 </p>
                 <h5 class="titulotecnologiaUsadas">Tecnologias Usadas</h5>
                 <p class="tecnologiasUsadas">
-                    HTML,CSS,Figma,VisualStudio 
+                    HTML,CSS,Figma,VisualStudio. 
                 </p>
             </div>
         </div>
-</main> 
+</main>
+<footer id="footer">
+    <div class="logoFooterContainer">
+        <img src="Assets/logoDFBN.png">
+    </div>
+    <h6 class="textFooter">© Copyright 2021 – Todos los derechos reservados – <br>
+        Desarrollado por Diego Ferro</h6>
+</footer> 
 </body>
 </html>
