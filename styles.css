@@ -71,13 +71,14 @@ ol, ul {
     color:white;
 }
 .btn_menu{
-    margin-right:30px;
+    margin-right:.30px;
     font-size:25px;
     cursor: pointer;
     display:none;
+    
 }
 ul.show{
-    top:65px;
+    top:105px;
 }
 
 @media screen and (max-width: 952px){
@@ -613,12 +614,19 @@ p.parrafoSobreMi{
     border:#01A0C6 solid 2px;
     border-radius: 20px;
     padding: 30px;
-    
 }
+
 .tituloProyecto{
     margin-top: 10px;
     margin-bottom: 40px;
 }
+.enlace {
+    color:#0580B7;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .imagenWebTributoSalmona1{
     background-image:url
 }
@@ -633,6 +641,8 @@ p.parrafoSobreMi{
     flex-direction: column;
 }
 .tituloydescripcionProyecto{
+    display:flex;
+    flex-direction: column;
     padding: 20px;
     background: linear-gradient(180deg, #00181E 0%, rgba(38, 38, 38, 0) 85.94%);
     border-radius: 10px;
