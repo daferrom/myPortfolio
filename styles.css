@@ -534,12 +534,14 @@ p.parrafoSobreMi{
         justify-content: center;
         margin-bottom: 0px;
     }
+    /*/
     h2.nombreBold{
         padding: 0 0 0 0;
         font-size: 20px;
         justify-content: center;
         align-items: center;
     }
+    */
     .tituloProgramador{
         font-size: 20px;
         line-height:0px;
