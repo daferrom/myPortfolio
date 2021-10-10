@@ -614,6 +614,7 @@ p.parrafoSobreMi{
     border:#01A0C6 solid 2px;
     border-radius: 20px;
     padding: 30px;
+    
 }
 
 .tituloProyecto{
@@ -731,6 +732,77 @@ p.parrafoSobreMi{
 }
 .btn-submit:hover{
     background-color:#22A69E;
-
 }
 
+#proyectos{
+    height:100%;
+    width:100%;
+    position:relative;
+    /*overflow-x:hidden;*/
+}
+
+.slider{
+    height: 100%;
+    width: 100%;
+    display: flex; 
+}
+.slide{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position:relative;
+    /*z-index:-1*/
+    transform: translateX(100%);
+}
+.slide.active{
+    transform: translateX(0%);    
+}
+.slide::after{
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,.6);
+    z-index:-1;
+}
+
+.slide-1{
+
+}
+.slide-2{
+    
+}
+.slide-3{
+    
+}
+.slide-4{
+    
+}
+
+/* Buttons slider Style */
+
+.buttons{
+    position: absolute;
+    z-index: 5;
+    bottom:0;
+    left:50%;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    font-size: 50px;
+}
+.buttons.div{
+    cursor: pointer;
+    pointer-events: all;
+    padding:15px;
+    background-color: rgba(255, 255, 255, 0.26);
+}
+.buttons .div:hover{
+    background-color: white;
+}
