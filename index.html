@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
-    <script src="./script.js" defer></script>
+    <script src="./script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Diego Ferro Portfolio</title>
@@ -45,7 +45,7 @@
                 <div class="parrafoIntro">
                     <h3 class="tituloParrafo">Hola!</h3>
                     <p class="parrafo">
-                        Soy un desarrollador fullstack con pasion<br>
+                        Soy un Desarrollador Fullstack con pasion<br>
                         por la programación y con entusiasmo para dar<br>
                         soluciones especificas a las necesidades de cada<br>
                         cliente.
@@ -63,13 +63,13 @@
             <h3 class="tituloMisRedes">Mis redes</h3>
             <div class="CointainerLogosRedes">
                 <div class="iconcontainer">
-                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZcRlJdDPCLbGdmnGThTRFdTTpkZGjDCcjKLFPnJQrWQSgsHXKvLxJtkrQDsczlTnPSmQB"><img class="logoRed" src="Assets/Emaillogo1.png"></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZcRlJdDPCLbGdmnGThTRFdTTpkZGjDCcjKLFPnJQrWQSgsHXKvLxJtkrQDsczlTnPSmQB" target="_blank"><img class="logoRed" src="Assets/Emaillogo1.png"></a>
                 </div>
                 <div class="iconcontainer">            
-                    <a href="https://github.com/daferrom"><img class="logoRed" src="Assets/githublogo1.png"></a>
+                    <a href="https://github.com/daferrom" target="_blank"><img class="logoRed" src="Assets/githublogo1.png"></a>
                 </div>    
                 <div class="iconcontainer">
-                    <a href="https://www.linkedin.com/feed/"><img class="logoRed" src="Assets/linkedInLogo1.png"></a>
+                    <a href="https://www.linkedin.com/in/diego-alejandro-ferro-mart%C3%ADnez-54205828/" target="_blank"><img class="logoRed" src="Assets/linkedInLogo1.png"></a>
                 </div>
             </div>
         </div>
@@ -122,6 +122,23 @@
     </section>
     <section id="habilidades">
         <h3 class="tituloSeccion">Habilidades</h3>
+        
+        <div class="habilidadesContainer">
+            <div class="tituloyBarra">
+                <h4 class="tituloHabilidad">Python</h4>
+                <div class="barraProgreso"></div>
+            </div>
+            <label class="logoHabilidad"><img src="./Assets/python logo.png"></label>
+        </div>
+
+        <div class="habilidadesContainer">
+            <div class="tituloyBarra">
+                <h4 class="tituloHabilidad">Javascript</h4>
+                <div class="barraProgreso"></div>
+            </div>
+            <label class="logoHabilidad"><img src="./Assets/jslogo1.png"></label>
+        </div>
+
         <div class="habilidadesContainer">
             <div class="tituloyBarra">
                 <h4 class="tituloHabilidad">HTML</h4>
@@ -136,130 +153,161 @@
             </div>
             <label class="logoHabilidad"><img src="./Assets/CSS3BN1.png"></label>
         </div>
-        <div class="habilidadesContainer">
-            <div class="tituloyBarra">
-                <h4 class="tituloHabilidad">Javascript</h4>
-                <div class="barraProgreso"></div>
-            </div>
-            <label class="logoHabilidad"><img src="./Assets/jslogo1.png"></label>
-        </div>
+        
     </section>
     <!--------------PROYECTOS---------------------->
     <section id="proyectos">
-        <h3 class="tituloSeccion">Proyectos</h3>
+        <h3 class="tituloSeccionProyectos">
+            Proyectos
+        </h3>
             <div class="slider">
-                <div class="slide slide-1 active">
-                    <div class="proyectoContainer">
-                            <h4 class="tituloProyecto"> 
-                                Pagina tributo a Rogelio Salmona 
-                            </h4>
-                            <div class="containerGaleriaImgs">
-                                <div class="imagescontainer">
-                                    <img class="imagen1" src="./Assets/Img2_Tetris_Game.jpg">
-                                </div>
-                            </div>
-                        <div class="tituloydescripcionProyecto">
-                            <h4 class="tituloDescripcion">Descripción</h4>
-                            <a class="enlace" href="https://daferrom.github.io/SALMONAWEB/index.html" target="_blank">Ir al proyecto SALMONA PAGINA TRIBUTO</a>
-                            <p class="descripcionProyecto">
-                                El proyecto es una pagina web tributo al arquitecto rogelio Salmona. La pagina esta compuesta<br>
-                                de tres secciones: la primera contiene un resumen de salmona y su obra; La segunda sección<br>
-                                una breve biografia del arquitecto, sus maestros , viajes y arquitecturas que lo influenciaron;<br>
-                                Finalmente la ultima parte muestra los proyectos mas representativos de su obra.<br>                
-                            </p>
-                            <h5 class="titulotecnologiaUsadas">Tecnologias Usadas</h5>
-                            <p class="tecnologiasUsadas">
-                                HTML, CSS. 
-                            </p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="slide slide-2">
-                    <div class="proyectoContainer">
-                        <h4 class="tituloProyecto"> 
-                            Juego de Tetris
-                        </h4>
+                <div class="slide slide-1">
+                    <h4 class="tituloProyecto"> 
+                        Pagina tributo a Rogelio Salmona 
+                    </h4>
+                    <div class="projectContainer"> 
                         <div class="containerGaleriaImgs">
-                            <div class="imagescontainer">
-                                <img src="./Assets/Img2_Tetris_Game.jpg">
-                            </div>
+                            <img class="imagen1" src="./Assets/Img1Salmonawebsite.jpg">
                         </div>
                         <div class="tituloydescripcionProyecto">
-                            <h4 class="tituloDescripcion">Descripción</h4>
-                            <a class="enlace" href="https://daferrom.github.io/tetrisGame/" target="_blank">Ir al proyecto JUEGO DE TETRIS</a>
+                            <h4 class="tituloDescripcion">
+                                Descripción
+                            </h4>
+                            <a class="enlace" href="https://daferrom.github.io/SALMONAWEB/index.html" target="_blank">
+                                Ir al proyecto SALMONA PAGINA TRIBUTO
+                            </a>
                             <p class="descripcionProyecto">
-                                El proyecto consiste en el desarrollo de un reinterpretacion usando vanilla Javascript 
-                                del clasico juego de Tetris desarrollado originalmente por Alekséi Pázhitnov. 
-                                El proyecto tiene un contador de puntos por cuadro eliminado, es decir 10 por linea.
-                                Tambien cuenta funcionalidades de pausa y reinicio del juego
-                                Se usaron estilos de bootstrap para las sweetalerts y los botones.                
+                                El proyecto es una pagina web tributo al arquitecto rogelio Salmona. La pagina esta compuesta
+                                de tres secciones: la primera contiene un resumen de salmona y su obra; La segunda sección
+                                una breve biografia del arquitecto, sus maestros , viajes y arquitecturas que lo influenciaron;
+                                Finalmente la ultima parte muestra los proyectos mas representativos de su obra.              
                             </p>
-                            <h5 class="titulotecnologiaUsadas">Tecnologias Usadas</h5>
-                            <p class="tecnologiasUsadas">
-                                HTML, CSS, Javascript, Bootstrap. 
-                            </p>
-                            
+                            <h5 class="titulotecnologiaUsadas">
+                                Tecnologias Usadas
+                            </h5>
+                                <p class="tecnologiasUsadas">
+                                    HTML / CSS. 
+                                </p>
                         </div>
+                    </div>    
+                </div> 
+                
+                <div class="slide slide-2 ">
+                    <h4 class="tituloProyecto"> 
+                        Juego de Tetris
+                    </h4>
+                    <div class="projectContainer">
+                            <div class="containerGaleriaImgs">
+                                <img class="imagen1" src="./Assets/Img2_Tetris_Game.jpg">
+                            </div>
+                            <div class="tituloydescripcionProyecto">
+                                <h4 class="tituloDescripcion">
+                                    Descripción
+                                </h4>
+                                <a class="enlace" href="https://daferrom.github.io/tetrisGame/" target="_blank">
+                                    Ir al proyecto JUEGO DE TETRIS
+                                </a>
+                                <p class="descripcionProyecto">
+                                    El proyecto consiste en el desarrollo de un reinterpretacion usando vanilla Javascript 
+                                    del clasico juego de Tetris desarrollado originalmente por Alekséi Pázhitnov. 
+                                    El proyecto tiene un contador de puntos por cuadro eliminado, es decir 10 por linea.
+                                    Tambien cuenta funcionalidades de pausa y reinicio del juego
+                                    Se usaron estilos de bootstrap para las sweetalerts y los botones.                
+                                </p>
+                                <h5 class="titulotecnologiaUsadas">
+                                    Tecnologias Usadas
+                                </h5>
+                                <p class="tecnologiasUsadas">
+                                    Vanilla Javascript / HTML / CSS / Bootstrap. 
+                                </p>
+                            </div>
                     </div>
                 </div>
-
-                <div class="slide slide-3">
-                    <div class="proyectoContainer"> 
+                
+                <div class="slide slide-3 ">
                         <h4 class="tituloProyecto"> 
                             La bodeguita app de domicilios
                         </h4>
-                        <div class="containerGaleriaImgs">
-                            <img class="imagen1" src="Assets/Img1SalmonaTributoWeb.jpg">
+                        <div class="projectContainer"> 
+                            <div class="containerGaleriaImgs">
+                                <img class="imagen1" src="./Assets/Img3_App_Bodeguita.jpg">
+                            </div>
+                            <div class="tituloydescripcionProyecto">
+                                <h4 class="tituloDescripción">
+                                    Descripción
+                                </h4>
+                                <a class="enlace" href="https://daferrom.github.io/bodeguita-app/" target="_blank">
+                                    Ir al proyecto BODEGUITA APP
+                                </a>
+                                <p class="descripcionProyecto">
+                                    El proyecto es una aplicación de domicilios para una tienda de abarrotes de un negocio local en el Pital, Huila.              
+                                </p>
+                                <h5 class="titulotecnologiaUsadas">
+                                    Tecnologias Usadas
+                                </h5>
+                                <p class="tecnologiasUsadas">
+                                React.Js / Javascript / HTML / CSS / Figma / VisualStudio.
+                                </p>
+                            </div>
                         </div>
-                        <div class="tituloydescripcionProyecto">
-                            <h4 class="tituloDescripcion">Descripción</h4>
-                            <a class="enlace" href="https://daferrom.github.io/SALMONAWEB/index.html">Ir al proyecto</a>
-                            <p class="descripcionProyecto">
-                                El proyecto es una pagina web tributo al arquitecto rogelio Salmona. La pagina esta compuesta<br>
-                                de tres secciones: la primera contiene un resumen de salmona y su obra; La segunda sección<br>
-                                una breve biografia del arquitecto, sus maestros , viajes y arquitecturas que lo influenciaron;<br>
-                                Finalmente la ultima parte muestra los proyectos mas representativos de su obra.<br>                
-                            </p>
-                            <h5 class="titulotecnologiaUsadas">Tecnologias Usadas</h5>
-                            <p class="tecnologiasUsadas">
-                                HTML, CSS, Figma, VisualStudio.
-                            </p>
-                        </div>
-                    </div>
                 </div>
-
+               
                 <div class="slide slide-4">
-                    <div class="proyectoContainer">
-                        <h4 class="tituloProyecto"> 
-                            Videoclub CRUD con base de datos
-                        </h4>
+                    <h4 class="tituloProyecto"> 
+                        Videoclub CRUD con base de datos
+                    </h4>
+                    <div class="projectContainer">
                         <div class="containerGaleriaImgs">
-                            <img class="imagen1" src="Assets/Img1SalmonaTributoWeb.jpg">
+                            <img class="imagen1" src="Assets/Img4_crud_moviesApp.jpg">
                         </div>
                         <div class="tituloydescripcionProyecto">
                             <h4 class="tituloDescripcion">Descripción</h4>
-                            <a class="enlace" href="https://daferrom.github.io/SALMONAWEB/index.html">Ir al proyecto</a>
+                            <a class="enlace" href="https://daferrom.github.io/db_movies/client/" target="_blank">
+                                Ir al proyecto
+                            </a>
                             <p class="descripcionProyecto">
-                                El proyecto es una pagina web tributo al arquitecto rogelio Salmona. La pagina esta compuesta<br>
-                                de tres secciones: la primera contiene un resumen de salmona y su obra; La segunda sección<br>
-                                una breve biografia del arquitecto, sus maestros , viajes y arquitecturas que lo influenciaron;<br>
-                                Finalmente la ultima parte muestra los proyectos mas representativos de su obra.<br>                
+                               El proyecto consiste en un CRUD que permite la consulta edicion y actualizacion de 
+                               una base de datos de peliculas.              
                             </p>
                             <h5 class="titulotecnologiaUsadas">Tecnologias Usadas</h5>
                             <p class="tecnologiasUsadas">
-                                HTML, CSS, Figma, VisualStudio. 
+                                Angular / MySql / 
                             </p>
                         </div>
                     </div>
                 </div>
 
+                <div class="slide slide-5 ">
+                        <h4 class="tituloProyecto"> 
+                            Inventario Mercatodo
+                        </h4>
+                    <div class="projectContainer">
+                        <div class="containerGaleriaImgs">
+                            <img class="imagen1" src="Assets/Img5_mercatodo.jpg">
+                        </div>
+                        <div class="tituloydescripcionProyecto">
+                            <h4 class="tituloDescripcion">Descripción</h4>
+                            <a class="enlace" href="https://hungry-snyder-567928.netlify.app/admin">Ir al proyecto</a>
+                            <a class="enlace" href="https://apimercatodo.herokuapp.com/api/products/">Ir a la api del proyecto</a>
+                            <p class="descripcionProyecto">
+                               El proyecto consiste en un desarrollo tanto en Frontend y Backend de un inventario de un supermercado
+                               que puede ser consultado por los usuarios y un administrador (superusuario) con permisos para 
+                               hacer edicion de los articulos.             
+                            </p>
+                            <h5 class="titulotecnologiaUsadas">Tecnologias Usadas</h5>
+                            <p class="tecnologiasUsadas">
+                                Django / React.js / 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
+            
             <div class="buttons">
                 <div class="next"><ion-icon name="chevron-forward-outline"></ion-icon></div>
                 <div class="prev"><ion-icon name="chevron-back-outline"></ion-icon></div>
             </div>   
-          
-
     </section>
 
     <section id="contact-section">
